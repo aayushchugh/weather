@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather App</title>
+
+		<link rel="stylesheet" href="./style.css" />
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script src="./scrpit.js" defer></script>
+	</head>
+	<body>
+		<div class="container">
+			<!-- -------------------------------- left --------------------------------- -->
+			<div class="left">
+				<h1 class="temperature">40&deg;C</h1>
+				<div class="info">
+					<h2 class="info__city">Chandigarh</h2>
+					<p class="info__date">06:09-Sunday, 6 Oct'19</p>
+				</div>
+				<div class="weather-icon">
+					<img
+						src="./images/icons/raining.svg"
+						alt="icon"
+						class="weather-icon__img"
+					/>
+
+					<p class="weather-icon__text">Rainy</p>
+				</div>
+			</div>
+
+			<!-- -------------------------------- right -------------------------------- -->
+
+			<div class="right">
+				<div class="search">
+					<form class="search__form">
+						<input
+							type="text"
+							placeholder="Another Location"
+							class="search__input"
+							autocomplete="off"
+						/>
+						<button style="background-color: #405e70" class="search__btn">
+							<img
+								src="./images/icons/search.svg"
+								class="search__icon"
+								alt="search icon"
+							/>
+						</button>
+					</form>
+				</div>
+
+				<div class="weather-container">
+					<h2 class="weather-container__heading">weather details</h2>
+					<ul class="weather-details">
+						<li class="weather-details__detail">
+							<p class="weather-details__detail-title">Clouds</p>
+							<p class="weather-details__detail-content">
+								<span class="clouds"></span>%
+							</p>
+						</li>
+						<li class="weather-details__detail">
+							<p class="weather-details__detail-title">Humidity</p>
+							<p class="weather-details__detail-content">
+								<span class="humidity"></span>%
+							</p>
+						</li>
+						<li class="weather-details__detail">
+							<p class="weather-details__detail-title">Pressure</p>
+							<p class="weather-details__detail-content">
+								<span class="pressure"></span> Pa
+							</p>
+						</li>
+						<li class="weather-details__detail">
+							<p class="weather-details__detail-title">Wind</p>
+							<p class="weather-details__detail-content">
+								<span class="wind-speed"></span> km/h
+							</p>
+						</li>
+						<li class="weather-details__detail">
+							<p class="weather-details__detail-title">Wind direction</p>
+							<p class="weather-details__detail-content">
+								<span class="wind-direction"></span> &deg;
+							</p>
+						</li>
+						<li class="weather-details__detail">
+							<p class="weather-details__detail-title">Visibility</p>
+							<p class="weather-details__detail-content">
+								<span class="visibility"></span> km
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

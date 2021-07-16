@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  filter: brightness(0.75);
+}
+
+ul {
+  list-style: none;
+}
+
+/* -------------------------------- left side ------------------------------- */
+.left {
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 15rem;
+  margin-left: 5rem;
+}
+
+.temperature {
+  font-size: 8rem;
+  font-weight: 300;
+}
+
+.info {
+  margin-left: 4rem;
+}
+.info__city {
+  font-size: 4rem;
+  font-weight: 300;
+}
+.info__date {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.weather-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 4rem;
+}
+.weather-icon__img {
+  height: 4rem;
+  width: 4rem;
+}
+.weather-icon__text {
+  font-size: 1.5rem;
+}
+
+/* ------------------------------- right side ------------------------------- */
+.right {
+  width: 30%;
+  background-color: #00000050;
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  color: #b1cfd8;
+  box-shadow: 0 0 5rem 0 #0000009c;
+  padding: 3rem;
+}
+
+.search__form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.search__input {
+  width: 80%;
+  border: none;
+  background-color: #00000000;
+  border-bottom: 1px solid #ffffff80;
+  color: currentColor;
+  font-weight: 200;
+  font-size: 1.8rem;
+}
+.search__input:focus {
+  outline: none;
+}
+.search__input::-moz-placeholder {
+  color: currentColor;
+  font-weight: 200;
+}
+.search__input:-ms-input-placeholder {
+  color: currentColor;
+  font-weight: 200;
+}
+.search__input::placeholder {
+  color: currentColor;
+  font-weight: 200;
+}
+.search__btn {
+  box-shadow: none;
+  outline: none;
+  border: none;
+  padding: 1rem 1.5rem;
+  margin-right: -3rem;
+  margin-top: -3rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.search__btn:hover {
+  opacity: 0.8;
+}
+.search__icon {
+  height: 3rem;
+  width: 3rem;
+}
+
+.weather-container {
+  margin-top: 5rem;
+}
+.weather-container__heading {
+  color: #fff;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.weather-details__detail {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+}
